@@ -19,7 +19,7 @@ def similarity(v1, v2):  # return dot product of two vectors
     return np.dot(v1, v2)
 
 
-openai.api_key = open_file('openaiapikey.txt')
+openai.api_key = open_file('openaiapikey.txt').strip()
 
 
 def match_class(vector, classes):
